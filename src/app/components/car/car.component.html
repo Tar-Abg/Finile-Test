@@ -1,0 +1,12 @@
+<div class="card d-flex" style="width: 18rem;">
+  <div class="block">
+  <a [routerLink]="['/item', outCar.id]" class="block"> <img [src]="outCar.img" class="card-img-top" alt="..."></a>
+</div>
+  <div >
+    <div class="card-body block">
+      <h5 class="card-title">{{outCar.name}}</h5>
+      <p class="card-text">{{outCar.description}}</p>
+      <a  [routerLink]="['/item', outCar.id]" class="btn btn-primary">Go somewhere</a>
+    </div>
+  </div>  
+</div>

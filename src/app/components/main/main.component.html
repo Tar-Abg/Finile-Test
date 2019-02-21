@@ -1,0 +1,12 @@
+
+
+<div class="search fixed-top" >
+  <input type="text" [(ngModel)] = 'carName' (input)="searchByName()">
+  <button>search</button>
+</div>
+
+<div class="container mt-5">
+  <div  *ngFor = "let item of carsArray; let i = index"  class="mx-auto" style="width: 200px;" >
+    <app-car  *ngIf="item.search === 0 " [outCar] = 'item' class="mb-4  mx-auto"></app-car>
+  </div>
+</div>
